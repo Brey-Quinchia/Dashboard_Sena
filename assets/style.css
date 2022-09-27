@@ -29,3 +29,28 @@ th, td{
     border: 1px solid black;
     padding: 10px;
 }   
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    text-align: center;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #ccc, #cc0);
+    padding: 10px;
+    width: 300px;
+}
+
+button.option{
+    background: linear-gradient(90deg, blue, pink);
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    width: 200px;
+    font-size: medium;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
