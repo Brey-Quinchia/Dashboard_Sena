@@ -1,23 +1,40 @@
 body{
-    background-color: aquamarine;
+    background-image: url(img/backgroundimg.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: arvo;
 }
 
 header{
-    text-align: center;
-}
+    background: linear-gradient(60deg,transparent 5%,#ff6719, #ff6719);
 
-.content{
-    display:flex;
+    border-radius: 20px;
+    border-bottom: 2px solid #ccc;
+    min-height: 50px;
+    margin-top: 0px;
+    padding:10px 0 ;
+    width: auto;
+    /* Propiedades para el texto  */
+    /* font-family:'Gloria Hallelujah'; */
+    width: 100%;
+    font-size: xx-large;
+    text-align: center;
+    line-height: 30px;
+}
+.container{
+    display: flex;
+    align-items: center;
     justify-content: center;
+    margin-top: 20px;
+}
+.main{
     text-align: center;
     border-radius: 20px;
-    background: linear-gradient(90deg, rgb(255, 237, 102), rgb(216, 58, 248));
-    width: 90%;
-    height: auto;
+    background: linear-gradient(90deg, #ccc, #cc0);
     padding: 10px;
-}
-.content-data{
-    width: 90%;
+    width: 300px;
 }
 
 table{
@@ -31,20 +48,17 @@ th, td{
 }   
 
 
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.main{
-    text-align: center;
-    border-radius: 20px;
-    background: linear-gradient(90deg, #ccc, #cc0);
-    padding: 10px;
-    width: 300px;
-}
 
-button.option{
+
+form.upload-file{
+    border-radius: 20px;
+    background: linear-gradient(to top, blue, red); 
+    padding: 10px;
+    width: 90%;
+    
+}
+.option{
+    margin-top: 20px;
     background: linear-gradient(90deg, blue, pink);
     border-radius: 20px;
     border: none;
@@ -52,5 +66,4 @@ button.option{
     width: 200px;
     font-size: medium;
     cursor: pointer;
-    margin-bottom: 10px;
 }
