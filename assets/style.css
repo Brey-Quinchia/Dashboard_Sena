@@ -23,6 +23,11 @@ header{
     text-align: center;
     line-height: 30px;
 }
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container{
     display: flex;
     align-items: center;
@@ -34,9 +39,45 @@ header{
     border-radius: 20px;
     background: linear-gradient(90deg, #ccc, #cc0);
     padding: 10px;
-    width: 300px;
+    width:50%;
+    min-width: 50%;
 }
 
+ul.form-option{
+    list-style-type: none;
+    display: block;
+    
+}
+
+li.form-option{
+    /* Para diferenciar un poco */
+    border: 2px solid blue;
+    border-radius: 20px;
+    font-size: large;
+    margin-bottom: 10px;
+    width: 90%;
+    padding: 10px;
+}
+input[type="file"]{
+    user-select: none;
+}
+
+.submit{
+    width: 100px;
+    height: 40px;
+    background: linear-gradient(227deg, rgb(0, 255, 136), rgb(2, 179, 243));
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size:large;
+    margin-top: 5px;
+    transition: background, 0.5s;
+}
+
+.submit:hover{
+    background: linear-gradient(45deg, rgb(0, 255, 136), rgb(2, 179, 243));
+    transform: scale(1.1);
+}
 table{
     border: 1px solid black;
     border-collapse: collapse;

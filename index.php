@@ -11,7 +11,38 @@
     <?php require ('includes/menu.html')?>
     <section class="container">
         <div class="main">
-            
+            <h1>Seguimiento Academico - CIDM </h1>
+            <!--Formulario para carga de archivos y formatos -->
+            <form action="" method="post" class="center" id="upload-file" >
+                <ul class="form-option">
+                    <!-- Podemos simplificar esto con una funcion de php -->
+                    <li class="form-option">
+                        <label for="df49"> formato "DF49"</label><br>
+                        <input type="file" name="df49" id="df49"><br>
+                        <button class="submit">Cargar</button>
+                    </li>
+                    <li class="form-option">
+                        <label for="pe04"> formato "PE04"</label><br>
+                        <input type="file" name="pe04" id="pe04"><br>
+                        <button class="submit">Cargar</button>
+                    </li>
+                    <li class="form-option">
+                        <label for="df14a"> formato "DF14A"</label><br>
+                        <input type="file" name="df14a" id="df14a"><br>
+                        <button class="submit">Cargar</button>
+                    </li>
+                    <li class="form-option">
+                        <label for="df53"> formato "DF53"</label><br>
+                        <input type="file" name="df53" id="df53"><br>
+                        <button class="submit">Cargar</button>
+                    </li>
+                    <li class="form-option">
+                        <label for="df51">formato "DF51"</label><br>
+                        <input type="file" name="df51" id="df51">
+                        <button class="submit">Cargar</button>
+                    </li>
+                </ul>
+            </form>
         </div>
     </section>
 </body>
