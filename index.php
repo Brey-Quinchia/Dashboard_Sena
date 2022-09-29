@@ -11,7 +11,7 @@
     <?php require ('includes/menu.html')?>
     <section class="container">
         <div class="main">
-            <h1>Seguimiento Academico - CIDM </h1>
+            <h1>Seguimiento Academico -  </h1>
             <!--Formulario para carga de archivos y formatos -->
             <form action="" method="post" class="center" id="upload-file" >
                 <ul class="form-option">

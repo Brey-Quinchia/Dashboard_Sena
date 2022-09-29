@@ -8,8 +8,6 @@ body{
 }
 
 header{
-    background: linear-gradient(60deg,transparent 5%,#ff6719, #ff6719);
-
     border-radius: 20px;
     border-bottom: 2px solid #ccc;
     min-height: 50px;
@@ -37,7 +35,8 @@ header{
 .main{
     text-align: center;
     border-radius: 20px;
-    background: linear-gradient(90deg, #ccc, #cc0);
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    /* background: linear-gradient(90deg, #ccc, #cc0); */
     padding: 10px;
     width:50%;
     min-width: 50%;
@@ -51,12 +50,18 @@ ul.form-option{
 
 li.form-option{
     /* Para diferenciar un poco */
-    border: 2px solid blue;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    /* border: 1px solid blue; */
     border-radius: 20px;
     font-size: large;
     margin-bottom: 10px;
     width: 90%;
     padding: 10px;
+    transition: background,0.5s;
+}
+li.form-option:hover{
+    transform: scale(1.1);
 }
 input[type="file"]{
     user-select: none;
@@ -65,7 +70,8 @@ input[type="file"]{
 .submit{
     width: 100px;
     height: 40px;
-    background: linear-gradient(227deg, rgb(0, 255, 136), rgb(2, 179, 243));
+    background: rgb(222,128,199);
+    background: linear-gradient(90deg, rgba(222,128,199,1) 0%, rgba(177,236,232,1) 50%, rgba(194,96,255,1) 93%);
     border-radius: 20px;
     border: none;
     cursor: pointer;
