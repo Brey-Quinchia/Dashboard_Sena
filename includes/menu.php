@@ -1,10 +1,13 @@
 <?php
 //* Creacion del directorio para los links
 function direction($directory, $return){
-    $pe = $directory."alertas/programasEspeciales"; 
-    $ca = $directory."alertas/coordinacionAcademica";
-    $ac = $directory."alertas/ampliacionCobertura";  
-    if ($return ==1){
+    $hm = $directory; 
+    $pe = $directory."alertas/programasEspeciales.php"; 
+    $ca = $directory."alertas/coordinacionAcademica.php";
+    $ac = $directory."alertas/ampliacionCobertura.php";
+    if($return ==0){
+        echo $hm;
+    }elseif($return ==1){
         echo $pe; 
     }elseif($return==2){
         echo $ca; 
@@ -14,10 +17,10 @@ function direction($directory, $return){
 }
 ?>
 
-<link rel="stylesheet" href="">
+<link rel="stylesheet" href="../assets/special.css">
 <nav role="navigation" class="primary-navigation">
     <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="<?php direction($directory,0)?>">Home</a></li>
         <li><a href="#">Alertas de Seguimiento &dtrif;</a>
         <ul class="dropdown">
         

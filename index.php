@@ -8,8 +8,10 @@
     <title>|Options</title>
 </head>
 <body>
-    <?php require ('includes/menu.php'); 
+    <?php 
     $directory =""; 
+    require ('includes/menu.php'); 
+    
     ?>
     <section class="container">
         <div class="main">
