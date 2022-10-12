@@ -17,7 +17,7 @@
         <div class="main">
             <h1>Seguimiento Academico -  </h1>
             <!--Formulario para carga de archivos y formatos -->
-            <form action="" method="post" class="center" id="upload-file" >
+            <form action="alertas/programasEspeciales.php" method="post" class="center" id="upload-file" enctype="multipart/form-data" >
                 <ul class="form-option">
                     <!-- Podemos simplificar esto con una funcion de php -->
                     <li class="form-option">
@@ -37,7 +37,7 @@
                     </li>
                     <li class="form-option">
                         <label for="df53"> formato "DF53"</label><br>
-                        <input type="file" name="df53" id="df53"><br>
+                        <input type="file" name="df53" id="df53" required><br>
                         <button class="submit">Cargar</button>
                     </li>
                     <li class="form-option">
