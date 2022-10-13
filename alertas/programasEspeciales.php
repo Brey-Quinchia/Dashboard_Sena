@@ -39,7 +39,7 @@
                     <th>Matriculados</th>
                     <th>Activos</th>
                 </tr>
-                <?php include('../test.php')?>
+                <?php #include('../test.php')?>
 
                 
             </table>
