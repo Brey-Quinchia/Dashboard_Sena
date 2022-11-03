@@ -42,7 +42,7 @@
                 </tr>
                 <?php #include('../test.php')
                     //* Hacemos la consulta a la base de datos 
-                    $registros = $con -> query("SELECT * from df53 where estado_ficha='En ejecucion' and clase_programa='CURSO ESPECIAL'"); 
+                    $registros = $con -> query("SELECT * from df53 where estado_ficha='En ejecucion' and clase_programa='CURSO ESPECIAL' and programada ='S'"); 
                     while($reg=$registros->fetch_array())
                     {
                         echo "<tr>"; 
@@ -55,7 +55,7 @@
                         echo "<td>".$reg['clase_programa']."</td>"; 
                         echo "<td>".$reg['fecha_inicio']."</td>"; 
                         echo "<td>".$reg['fecha_fin']."</td>"; 
-                        echo "<td>"."NA"."</td>"; 
+                        echo "<td>".$reg['programada']."</td>"; 
                         echo "<td>"."NA"."</td>"; 
                         echo "<td>"."NA"."</td>"; 
                         echo "<td>"."NA"."</td>"; 
