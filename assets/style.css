@@ -1,5 +1,5 @@
 body{
-    background-image: url(img/backgroundimg.png);
+    /* background-image: url(img/backgroundimg.png); */
     background-position: left top;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -10,7 +10,9 @@ body{
 header{
     border-radius: 20px;
     border-bottom: 2px solid #ccc;
-    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    min-height: 40px;
     margin-top: 0px;
     padding:10px 0 ;
     width: auto;
@@ -20,6 +22,17 @@ header{
     font-size: xx-large;
     text-align: center;
     line-height: 30px;
+}
+img#logo_sena{
+    width: 7%;
+    height: 7%;
+    border-radius: 20px;
+}
+div#divisor_line{
+    background-color: black;
+    width: 5px;
+    height: 6pc;
+    margin-left: 8px;
 }
 .center{
     display: flex;
@@ -50,9 +63,9 @@ ul.form-option{
 
 li.form-option{
     /* Para diferenciar un poco */
-    background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-    /* border: 1px solid blue; */
+    /* background: rgb(131,58,180); */
+    /* background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); */
+    border: 1px solid blue;
     border-radius: 20px;
     font-size: large;
     margin-bottom: 10px;
@@ -61,7 +74,7 @@ li.form-option{
     transition: background,0.5s;
 }
 li.form-option:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 input[type="file"]{
     user-select: none;
@@ -71,7 +84,7 @@ input[type="file"]{
     width: 100px;
     height: 40px;
     background: rgb(222,128,199);
-    background: linear-gradient(90deg, rgba(222,128,199,1) 0%, rgba(177,236,232,1) 50%, rgba(194,96,255,1) 93%);
+    /* background: linear-gradient(90deg, rgba(222,128,199,1) 0%, rgba(177,236,232,1) 50%, rgba(194,96,255,1) 93%); */
     border-radius: 20px;
     border: none;
     cursor: pointer;
@@ -81,7 +94,7 @@ input[type="file"]{
 }
 
 .submit:hover{
-    background: linear-gradient(45deg, rgb(0, 255, 136), rgb(2, 179, 243));
+    /* background: linear-gradient(45deg, rgb(0, 255, 136), rgb(2, 179, 243)); */
     transform: scale(1.1);
 }
 table{
@@ -89,9 +102,16 @@ table{
     border-collapse: collapse;
     width: 100%;
 }
-th, td{
+th{
     border: 1px solid black;
     padding: 10px;
+    font-size:medium;
+}   
+
+td{
+    border: 1px solid black;
+    padding: 10px;
+    font-size: x-small;
 }   
 
 

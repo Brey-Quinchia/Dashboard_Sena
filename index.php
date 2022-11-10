@@ -11,6 +11,11 @@
     <title>|Options</title>
 </head>
 <body>
+    <header>
+        <img src="assets/img/logo_sena.png" id="logo_sena">
+        <div id="divisor_line"></div>
+        <h3>Centro de desarrollo Agroindustrial</h3>
+    </header>
     <?php 
     $directory =""; 
     require ('includes/menu.php'); 
@@ -18,7 +23,7 @@
     ?>
     <section class="container">
         <div class="main">
-            <h1>Seguimiento Academico -  </h1>
+            <h1>Seguimiento Academico - Arauca </h1>
             <!--Formulario para carga de archivos y formatos -->
             <form action="alertas/programasEspeciales.php" method="post" class="center" id="upload-file" enctype="multipart/form-data" >
                 <ul class="form-option">
