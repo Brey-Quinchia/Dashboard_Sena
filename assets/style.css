@@ -24,8 +24,8 @@ header{
     line-height: 30px;
 }
 img#logo_sena{
-    width: 7%;
-    height: 7%;
+    width: 5%;
+    /* height: 7%; */
     border-radius: 20px;
 }
 div#divisor_line{
