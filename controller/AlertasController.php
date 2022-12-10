@@ -1,15 +1,23 @@
 <?php
+//? Funcionalidad del controlador no funciono, retornamos a manera sencilla¿
 require_once('ObjectController.php'); 
-$alertas = new ObjectController; 
-$typeAlert = $_GET['alert'];
+//? Definimos un nuevo objeto de alerta
+$ObjAlert = new ObjectController; 
+$typeAlert = $_GET['alert']; 
+//? Almacenamos en variables los valores del modelo y las vistas
+$modelPath = $ObjAlert->ModelInclude($typeAlert); 
+$ViewPath = $ObjAlert->View($typeAlert); 
 switch ($typeAlert) {
     case 'ProgramasEspeciales':
         # code...
-        $alertas->View($typeAlert); 
+        include($modelPath);
+        include($ViewPath);
         break;
-    case 'CoordinacionAcademica':
-        $alertas->View($typeAlert);
-    case 'AmpliacionCobertura':
-        $alertas->View($typeAlert);
+    case 'AmpliacionCobertura': 
+        include($modelPath);
+        include($ViewPath);
+    default:
+        # code...
+        break;
 }
 ?>
