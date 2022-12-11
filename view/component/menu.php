@@ -2,9 +2,9 @@
 //* Creacion del directorio para los links
 function direction($directory, $return){
     $hm = $directory; 
-    $pe = $directory."alertas?alert=ProgramasEspeciales"; 
-    $ca = $directory."alertas?alert=CA";
-    $ac = $directory."alertas?alert=AC";
+    $pe = $directory."alertas?alert=Programas_Especiales"; 
+    $ca = $directory."alertas?alert=Coordinacion_Academica";
+    $ac = $directory."alertas?alert=Ampliacion_Cobertura";
     if($return ==0){
         echo $hm;
     }elseif($return ==1){

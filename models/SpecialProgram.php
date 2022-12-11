@@ -4,5 +4,5 @@ $con = connectdb::connect();
 $query = "SELECT * from df53"; 
     $result = $con->prepare($query); 
     $result->execute() ;
-    $data = $result->fetch(PDO::FETCH_ASSOC); 
+    $data = $result->fetchAll(PDO::FETCH_OBJ);
 ?>

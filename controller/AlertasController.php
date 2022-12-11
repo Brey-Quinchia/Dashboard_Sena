@@ -1,23 +1,26 @@
 <?php
 //? Funcionalidad del controlador no funciono, retornamos a manera sencilla¿
-require_once('ObjectController.php'); 
-//? Definimos un nuevo objeto de alerta
-$ObjAlert = new ObjectController; 
-$typeAlert = $_GET['alert']; 
-//? Almacenamos en variables los valores del modelo y las vistas
-$modelPath = $ObjAlert->ModelInclude($typeAlert); 
-$ViewPath = $ObjAlert->View($typeAlert); 
-switch ($typeAlert) {
-    case 'ProgramasEspeciales':
-        # code...
-        include($modelPath);
-        include($ViewPath);
-        break;
-    case 'AmpliacionCobertura': 
-        include($modelPath);
-        include($ViewPath);
-    default:
-        # code...
-        break;
+if(isset($_GET['alert'])){
+    //* Solo en caso de que la alerta este iniciada
+    include('alertPathController.php');
+    $typeAlert = $_GET['alert'];
+    switch ($typeAlert) {
+        case 'Programas_Especiales':
+            //?forma sencilla.
+            include_once($model_path['A_PE']);
+            include_once($view_path['A_PE']);
+            break;
+        case 'Coordinacion_Academica':
+            include_once($model_path['A_CA']);
+            include_once($view_path['A_CA']);
+            break; 
+        case 'Ampliacion_Cobertura':
+            include_once($model_path['A_AC']);
+            include_once($view_path['A_AC']);
+            break; 
+
+    }
+}else{
+    header('Location: ?alert=Programas_Especiales');
 }
 ?>
