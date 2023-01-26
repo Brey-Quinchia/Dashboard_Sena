@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>|Options</title>
+    <title>CloudLab | Tracking System</title>
 </head>
 <body>
     <header>
@@ -46,9 +46,11 @@
                         <label for="df14a"> formato "DF14A"</label><br>
                         <input type="file" name="df14a" id="df14a"><br>
                     </li>
-                    
+                    <li class="form-option">
+                        <!-- <label for="df14a"> formato "DF14A</label><br> -->
+                        <button class="submit" name="upload_format">Cargar</button>
+                    </li>
                 </ul>
-                <button class="submit" name="upload_format">Cargar</button>
             </form>
         </div>
     </section>
