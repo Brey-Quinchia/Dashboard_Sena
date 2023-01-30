@@ -31,6 +31,8 @@ function direction($directory, $return){
         </ul>
         </li>
         <!-- <li><a href="#">Alertas</a></li> -->
-        <li><a href="<?php direction($directory,0)?>">Salir</a></li>
+        <li>
+            <a href="controller/signout.php">Sign Out<i class="bi bi-box-arrow-left fs-5"></i></a>
+        </li>
     </ul>
 </nav>

@@ -31,6 +31,8 @@ function direction($directory, $return){
         </ul>
         </li>
         <!-- <li><a href="#">Alertas</a></li> -->
-        <li><a href="#">Salir</a></li>
+        <li>
+            <a href="#">Sign Out</a>
+        </li>
     </ul>
 </nav>

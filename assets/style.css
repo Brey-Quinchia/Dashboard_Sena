@@ -24,8 +24,8 @@ header{
     line-height: 30px;
 }
 img#logo_sena{
-    width: 5%;
-    /* height: 7%; */
+    width: 10%;
+    /* height: 1%; */
     border-radius: 20px;
 }
 div#divisor_line{
@@ -39,12 +39,12 @@ div#divisor_line{
     justify-content: center;
     align-items: center;
 }
-.container{
+/* .container{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-}
+} */
 .main{
     text-align: center;
     border-radius: 20px;
@@ -54,12 +54,21 @@ div#divisor_line{
     width: auto;
     min-width: 50%;
 }
-
-ul.form-option{
+ul.list-content{
+    list-style-image: url('img/box-fill.svg');
     list-style-type: none;
-    display: block;
+    width: 70%;
+}
+.hover-me:hover{
+    transform: scale(1.01);
     
 }
+ul.form-option{
+    display: block;
+    list-style-image: url('img/box-fill.svg');
+    list-style-type: none;
+}
+
 
 li.form-option{
     /* Para diferenciar un poco */
