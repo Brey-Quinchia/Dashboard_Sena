@@ -23,7 +23,8 @@
         <div class="main">
             <h1>Seguimiento Academico - Arauca </h1>
             <!--Formulario para carga de archivos y formatos -->
-            <form action="test/insertTest.php" method="post" class="center" id="upload-file" enctype="multipart/form-data" >
+            <form action="view/404.html" method="post" class="center" id="upload-file" enctype="multipart/form-data" >
+            <!-- <form action="test/insertTest.php" method="post" class="center" id="upload-file" enctype="multipart/form-data" > -->
                 <ul class="form-option">
                     <li class="form-option">
                         <label for="df53"> formato "DF53"</label><br>
