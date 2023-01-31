@@ -35,12 +35,12 @@
                                             <?php } ?>
                                             <form action="<?= $_SERVER['PHP_SELF'] ?>" method="post">
                                                 <div class="form-group">
-                                                    <input type="email" name="logemail" class="form-style" placeholder="Usuario" id="logemail" autocomplete="off" required>
+                                                    <input type="email" name="log-user" class="form-style" placeholder="Usuario" id="logemail" autocomplete="off" required>
                                                     <i class="input-icon bi bi-at"></i><!--Link for Bootstrap -->
                                                     <!-- <i class="input-icon uil uil-at"></i> -->
                                                 </div>
                                                 <div class="form-group mt-2">
-                                                    <input type="password" name="logpass" class="form-style" placeholder="Password" id="logpass" autocomplete="off" required>
+                                                    <input type="password" name="log-pass" class="form-style" placeholder="Password" id="logpass" autocomplete="off" required>
                                                     <i class="input-icon bi bi-person-lock"></i>
                                                     <!-- <i class="input-icon uil uil-lock-alt"></i> -->
                                                 </div>
