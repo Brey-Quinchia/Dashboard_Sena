@@ -1,1 +1,8 @@
+
 ErrorDocument 404 /Dashboard_Sena/404.php
+# Enable Rewriting
+RewriteEngine on
+# Rewrite user URLs
+#   Input:  alertas/NAME/
+#   Output: alert.php?id=NAME
+RewriteRule ^alertas/(\w+)/?$ alert.php?id=$1

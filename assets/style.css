@@ -59,9 +59,11 @@ ul.list-content{
     list-style-type: none;
     width: 70%;
 }
+.hover-me{
+    transition: 0.2s linear;
+}
 .hover-me:hover{
-    transform: scale(1.01);
-    
+    transform: scale(1.02);
 }
 ul.form-option{
     display: block;

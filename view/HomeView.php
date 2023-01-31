@@ -25,7 +25,7 @@
         <div class="container-md">
             <h1 class="text-center mt-2 fs-2">Tracking System - AR</h1>
             <p class="mx-auto fs-5 ms-2 mt-3">
-                Bienvenio al Sistema de <strong>Seguimiento Academico</strong> en esta vista
+                Bienvenio al Sistema de <strong>Seguimiento Academico</strong>, en esta seccion
                 puedes realizar la carga de los informes en los siguientes formatos:
             </p>
             <div class="container-sm ms-4">
@@ -36,7 +36,7 @@
             </div>
         </div>
         <!--Formulario para carga de archivos y formatos -->
-        <form class='p-1' action="view/404.html" method="post" id="upload-file" enctype="multipart/form-data">
+        <form class='p-1' action="<?= htmlspecialchars($_SERVER['PHP_SELF'].'?action=loadfile');?>" method="post" id="upload-file" enctype="multipart/form-data">
             <!-- <form action="test/insertTest.php" method="post" class="center" id="upload-file" enctype="multipart/form-data" > -->
             <?php
             //? What is the format Accept ? 
